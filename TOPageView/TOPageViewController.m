@@ -87,7 +87,6 @@
     for (TOPageItem *item in itemList) {
         if (!item.viewController) {
             item.viewController = [[UIViewController alloc] init];
-            item.viewController.view.backgroundColor = [UIColor colorWithWhite:rand() * 1.0f/RAND_MAX alpha:1];
         }
         [vcs addObject:item.viewController];
 

@@ -18,11 +18,10 @@
 		EA821B1F1EF90A2C00B661C1 /* TOPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B1E1EF90A2C00B661C1 /* TOPageItem.m */; };
 		EA821B231EF921FA00B661C1 /* AutoLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B221EF921FA00B661C1 /* AutoLayoutHelper.m */; };
 		EA821B261EFA68B700B661C1 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B251EFA68B700B661C1 /* IndexViewController.m */; };
-		EA821B321EFB53D900B661C1 /* StyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B301EFB53D900B661C1 /* StyleViewController.m */; };
-		EA821B331EFB53D900B661C1 /* StyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA821B311EFB53D900B661C1 /* StyleViewController.xib */; };
 		EA821B3C1EFB54CF00B661C1 /* SizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B3A1EFB54CF00B661C1 /* SizeViewController.m */; };
 		EA821B3D1EFB54CF00B661C1 /* SizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA821B3B1EFB54CF00B661C1 /* SizeViewController.xib */; };
 		EA821B411EFB592500B661C1 /* ContentSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B401EFB592500B661C1 /* ContentSettingsViewController.m */; };
+		EA94DA8A1EFCEF8F00D9241B /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA94DA891EFCEF8F00D9241B /* ExampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,14 +64,13 @@
 		EA821B221EF921FA00B661C1 /* AutoLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutHelper.m; sourceTree = "<group>"; };
 		EA821B241EFA68B700B661C1 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
 		EA821B251EFA68B700B661C1 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
-		EA821B2F1EFB53D900B661C1 /* StyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleViewController.h; sourceTree = "<group>"; };
-		EA821B301EFB53D900B661C1 /* StyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleViewController.m; sourceTree = "<group>"; };
-		EA821B311EFB53D900B661C1 /* StyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StyleViewController.xib; sourceTree = "<group>"; };
 		EA821B391EFB54CF00B661C1 /* SizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeViewController.h; sourceTree = "<group>"; };
 		EA821B3A1EFB54CF00B661C1 /* SizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeViewController.m; sourceTree = "<group>"; };
 		EA821B3B1EFB54CF00B661C1 /* SizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeViewController.xib; sourceTree = "<group>"; };
 		EA821B3F1EFB592500B661C1 /* ContentSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSettingsViewController.h; sourceTree = "<group>"; };
 		EA821B401EFB592500B661C1 /* ContentSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSettingsViewController.m; sourceTree = "<group>"; };
+		EA94DA881EFCEF8F00D9241B /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		EA94DA891EFCEF8F00D9241B /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 			children = (
 				EA821B3E1EFB592500B661C1 /* content */,
 				EA821B341EFB54AC00B661C1 /* size */,
-				EA821B2A1EFB53B300B661C1 /* style */,
 				EA821AFD1EF7659300B661C1 /* AppDelegate.h */,
 				EA821AFE1EF7659300B661C1 /* AppDelegate.m */,
 				EA821AFF1EF7659300B661C1 /* Assets.xcassets */,
@@ -149,6 +146,8 @@
 				EA821B051EF7659300B661C1 /* main.m */,
 				EA821B241EFA68B700B661C1 /* IndexViewController.h */,
 				EA821B251EFA68B700B661C1 /* IndexViewController.m */,
+				EA94DA881EFCEF8F00D9241B /* ExampleViewController.h */,
+				EA94DA891EFCEF8F00D9241B /* ExampleViewController.m */,
 			);
 			path = TOPageViewExample;
 			sourceTree = "<group>";
@@ -169,16 +168,6 @@
 				EA821B221EF921FA00B661C1 /* AutoLayoutHelper.m */,
 			);
 			path = tools;
-			sourceTree = "<group>";
-		};
-		EA821B2A1EFB53B300B661C1 /* style */ = {
-			isa = PBXGroup;
-			children = (
-				EA821B2F1EFB53D900B661C1 /* StyleViewController.h */,
-				EA821B301EFB53D900B661C1 /* StyleViewController.m */,
-				EA821B311EFB53D900B661C1 /* StyleViewController.xib */,
-			);
-			path = style;
 			sourceTree = "<group>";
 		};
 		EA821B341EFB54AC00B661C1 /* size */ = {
@@ -309,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA821B331EFB53D900B661C1 /* StyleViewController.xib in Resources */,
 				EA821B3D1EFB54CF00B661C1 /* SizeViewController.xib in Resources */,
 				EA821B0C1EF7659300B661C1 /* Info.plist in Resources */,
 				EA821B091EF7659300B661C1 /* Assets.xcassets in Resources */,
@@ -339,13 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA821B121EF7685B00B661C1 /* TOPageViewController.m in Sources */,
+				EA94DA8A1EFCEF8F00D9241B /* ExampleViewController.m in Sources */,
 				EA821B231EF921FA00B661C1 /* AutoLayoutHelper.m in Sources */,
 				EA821B151EF7688700B661C1 /* TOPageTitleView.m in Sources */,
 				EA821B3C1EFB54CF00B661C1 /* SizeViewController.m in Sources */,
 				EA821B0D1EF7659300B661C1 /* main.m in Sources */,
 				EA821B081EF7659300B661C1 /* AppDelegate.m in Sources */,
 				EA821B1F1EF90A2C00B661C1 /* TOPageItem.m in Sources */,
-				EA821B321EFB53D900B661C1 /* StyleViewController.m in Sources */,
 				EA821B1B1EF7CB6600B661C1 /* TOPageTitleButton.m in Sources */,
 				EA821B411EFB592500B661C1 /* ContentSettingsViewController.m in Sources */,
 				EA821B261EFA68B700B661C1 /* IndexViewController.m in Sources */,

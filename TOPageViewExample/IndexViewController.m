@@ -10,6 +10,7 @@
 #import "ContentSettingsViewController.h"
 #import "SizeViewController.h"
 #import "TOPageViewController.h"
+#import "ExampleViewController.h"
 
 @interface IndexViewController ()
 
@@ -74,17 +75,18 @@
         case 0:
         {
             TOPageViewController *temp = [[TOPageViewController alloc] init];
+            temp.title = @"TOPageViewController";
             temp.edgesForExtendedLayout = UIRectEdgeNone;
             
             temp.itemList = @[
-                              [TOPageItem itemWithTitle:@"母婴"],
-                              [TOPageItem itemWithTitle:@"美妆"],
-                              [TOPageItem itemWithTitle:@"保健"],
-                              [TOPageItem itemWithTitle:@"服饰"],
-                              [TOPageItem itemWithTitle:@"食品"],
-                              [TOPageItem itemWithTitle:@"百货"],
-                              [TOPageItem itemWithTitle:@"数码"],
-                              [TOPageItem itemWithTitle:@"测试一下"],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"母婴"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"美妆"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"保健"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"服饰"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"食品"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"百货"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"数码"]],
+                              [TOPageItem itemWithViewController:[[ExampleViewController alloc]initWithTitle:@"测试一下"]],
                               ];
             viewController = temp;
         }
