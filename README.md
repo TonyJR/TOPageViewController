@@ -7,3 +7,10 @@ TOPageViewController是一个可视化编辑的分页菜单。支持storyboard�
 ![image](https://github.com/TonyJR/TOPageViewController/blob/master/1.gif)
 
 ![image](https://github.com/TonyJR/TOPageViewController/blob/master/2.gif)
+
+快速集成
+------------
+推荐使用cocoapod安装
+```ruby
+pod 'TOPageViewController'
+```
