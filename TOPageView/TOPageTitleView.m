@@ -29,7 +29,7 @@
 
 @end
 
-IB_DESIGNABLE
+
 @implementation TOPageTitleView
 
 #pragma mark - Life Cycle

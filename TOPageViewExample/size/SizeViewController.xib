@@ -222,7 +222,7 @@
                 <constraint firstItem="t6H-bn-k1n" firstAttribute="top" secondItem="4Bw-rd-L0s" secondAttribute="top" id="xeg-aA-f8S"/>
                 <constraint firstItem="t6H-bn-k1n" firstAttribute="width" secondItem="4Bw-rd-L0s" secondAttribute="width" id="zgt-NM-RNc"/>
             </constraints>
-            <point key="canvasLocation" x="227" y="32"/>
+            <point key="canvasLocation" x="-162" y="-55"/>
         </view>
     </objects>
 </document>
