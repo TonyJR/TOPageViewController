@@ -1,6 +1,6 @@
 # TOPageViewController
 ==============
-[![CocoaPods](https://img.shields.io/cocoapods/v/TOPageViewController.svg?style=flat)](http://cocoapods.org/?q=name%3ATOPageViewController)
+[![CocoaPods](https://img.shields.io/cocoapods/v/TOPageView.svg?style=flat)](http://cocoapods.org/?q=TOPageView)
 
 TOPageViewController是一个可视化编辑的分页菜单。支持storyboard、xib、autolayout。动态加载页面，支持懒加载。属性和内容支持动态修改
 
