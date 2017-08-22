@@ -267,6 +267,7 @@
     
     if (animation) {
         [UIView animateWithDuration:TO_PAGE_ANIMATE_DURATION delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [self updateConstraints];
             [self layoutIfNeeded];
             
         } completion:nil];
