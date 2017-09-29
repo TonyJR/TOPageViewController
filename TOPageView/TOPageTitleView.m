@@ -310,6 +310,7 @@ IB_DESIGNABLE
 
 - (void)setTitles:(NSArray<TOPageItem *> *)titles index:(NSUInteger)index{
     _titles = [titles copy];
+    self.selectedIndex = index;
     [self setNeedsUpdateButtons];
 }
 

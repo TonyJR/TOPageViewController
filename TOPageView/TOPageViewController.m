@@ -94,6 +94,7 @@
     _viewControllers = vcs;
     if (self.titleView.selectedItem){
         [self.pageViewController setViewControllers:@[self.titleView.selectedItem.viewController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
+        self.pageViewController.view.hidden = NO;
     }
 }
 
@@ -111,7 +112,7 @@
     _viewControllers = vcs;
     if (self.titleView.selectedItem){
         [self.pageViewController setViewControllers:@[self.titleView.selectedItem.viewController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
-
+        self.pageViewController.view.hidden = NO;
     }
 }
 
