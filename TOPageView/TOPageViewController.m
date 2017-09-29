@@ -80,6 +80,23 @@
 
 
 #pragma mark - Setter
+- (void)updateItemList:(NSArray<TOPageItem *> *)itemList selectedIndex:(NSUInteger)index{
+    _itemList = itemList;
+    [self.titleView setTitles:itemList index:index];
+    NSMutableArray *vcs = [NSMutableArray array];
+    for (TOPageItem *item in itemList) {
+        if (!item.viewController) {
+            item.viewController = [[UIViewController alloc] init];
+        }
+        [vcs addObject:item.viewController];
+        
+    }
+    _viewControllers = vcs;
+    if (self.titleView.selectedItem){
+        [self.pageViewController setViewControllers:@[self.titleView.selectedItem.viewController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
+    }
+}
+
 - (void)setItemList:(NSArray<TOPageItem *> *)itemList{
     _itemList = itemList;
     self.titleView.titles = itemList;

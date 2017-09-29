@@ -19,5 +19,6 @@
 
 @property (nonatomic,assign) NSInteger selectedIndex;
 
+- (void)updateItemList:(NSArray<TOPageItem *> *)itemList selectedIndex:(NSUInteger)index;
 
 @end

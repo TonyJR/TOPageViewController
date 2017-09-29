@@ -29,7 +29,7 @@
 
 @end
 
-
+IB_DESIGNABLE
 @implementation TOPageTitleView
 
 #pragma mark - Life Cycle
@@ -267,7 +267,6 @@
     
     if (animation) {
         [UIView animateWithDuration:TO_PAGE_ANIMATE_DURATION delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            [self updateConstraints];
             [self layoutIfNeeded];
             
         } completion:nil];
@@ -307,6 +306,11 @@
     }else{
         _selectedIndex = -1;
     }
+}
+
+- (void)setTitles:(NSArray<TOPageItem *> *)titles index:(NSUInteger)index{
+    _titles = [titles copy];
+    [self setNeedsUpdateButtons];
 }
 
 - (void)setIndicatorHeight:(CGFloat)indicatorHeight{

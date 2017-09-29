@@ -65,5 +65,6 @@
 
 #pragma mark - methods
 - (void)setNeedsUpdateButtons;
+- (void)setTitles:(NSArray<TOPageItem *> *)titles index:(NSUInteger)index;
 
 @end
