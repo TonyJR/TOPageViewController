@@ -12,5 +12,5 @@ TOPageViewController是一个可视化编辑的分页菜单。支持storyboard�
 ------------
 推荐使用cocoapod安装
 ```ruby
-pod 'TOPageViewController'
+pod 'TOPageView'
 ```
