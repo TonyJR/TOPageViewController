@@ -308,12 +308,6 @@ IB_DESIGNABLE
     }
 }
 
-- (void)setTitles:(NSArray<TOPageItem *> *)titles index:(NSUInteger)index{
-    _titles = [titles copy];
-    self.selectedIndex = index;
-    [self setNeedsUpdateButtons];
-}
-
 - (void)setIndicatorHeight:(CGFloat)indicatorHeight{
     _indicatorHeight = indicatorHeight;
     [self setNeedsUpdateIndicator];
@@ -485,11 +479,17 @@ IB_DESIGNABLE
 
 #pragma mark - Events
 - (void)buttonClickHandler:(TOPageTitleButton *)button{
-    NSInteger oldIndex = self.selectedIndex;
-    self.selectedIndex = button.buttonIndex;
-    if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:didSelecteIndex:oldIndex:)]) {
-        [self.titleViewDelegate pageTitleView:self didSelecteIndex:self.selectedIndex oldIndex:oldIndex];
+    NSInteger newIndex = button.buttonIndex;
+    if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:shouldSelectedIndex:)]) {
+        if ([self.titleViewDelegate pageTitleView:self shouldSelectedIndex:newIndex]) {
+            NSInteger oldIndex = self.selectedIndex;
+            self.selectedIndex = newIndex;
+            if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:didSelecteIndex:oldIndex:)]) {
+                [self.titleViewDelegate pageTitleView:self didSelecteIndex:self.selectedIndex oldIndex:oldIndex];
+            }
+        }
     }
+   
 }
 
 #pragma mark - Public
