@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "TOPageView"
-s.version          = “1.0.3”
+s.version          = "1.0.3"
 s.summary          = "一个可视化编辑的分页菜单。支持storyboard、xib、autolayout。动态加载页面，支持懒加载。属性和内容支持动态修改"
 s.description      = <<-DESC
 TOPageViewController是一个可视化编辑的分页菜单。支持storyboard、xib、autolayout。动态加载页面，支持懒加载。属性和内容支持动态修改
