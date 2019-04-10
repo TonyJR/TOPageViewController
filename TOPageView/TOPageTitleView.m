@@ -32,6 +32,10 @@
 IB_DESIGNABLE
 @implementation TOPageTitleView
 
+- (CGSize)intrinsicContentSize{
+    return UILayoutFittingExpandedSize;
+}
+
 #pragma mark - Life Cycle
 - (void)prepareForInterfaceBuilder{
     [self config];
@@ -488,8 +492,13 @@ IB_DESIGNABLE
                 [self.titleViewDelegate pageTitleView:self didSelecteIndex:self.selectedIndex oldIndex:oldIndex];
             }
         }
+    }else{
+        NSInteger oldIndex = self.selectedIndex;
+        self.selectedIndex = newIndex;
+        if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:didSelecteIndex:oldIndex:)]) {
+            [self.titleViewDelegate pageTitleView:self didSelecteIndex:self.selectedIndex oldIndex:oldIndex];
+        }
     }
-   
 }
 
 #pragma mark - Public
