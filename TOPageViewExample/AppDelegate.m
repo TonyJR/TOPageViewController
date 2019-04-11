@@ -2,12 +2,11 @@
 //  AppDelegate.m
 //  TOPageView
 //
-//  Created by Tony on 17/6/19.
-//  Copyright © 2017年 Tony. All rights reserved.
+//  Created by TonyJR on 2019/4/11.
+//  Copyright © 2019 TonyJR. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "IndexViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[IndexViewController alloc] init]];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

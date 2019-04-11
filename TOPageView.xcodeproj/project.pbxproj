@@ -3,92 +3,104 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA821B081EF7659300B661C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821AFE1EF7659300B661C1 /* AppDelegate.m */; };
-		EA821B091EF7659300B661C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA821AFF1EF7659300B661C1 /* Assets.xcassets */; };
-		EA821B0A1EF7659300B661C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA821B001EF7659300B661C1 /* LaunchScreen.storyboard */; };
-		EA821B0C1EF7659300B661C1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA821B041EF7659300B661C1 /* Info.plist */; };
-		EA821B0D1EF7659300B661C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B051EF7659300B661C1 /* main.m */; };
-		EA821B121EF7685B00B661C1 /* TOPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B111EF7685B00B661C1 /* TOPageViewController.m */; };
-		EA821B151EF7688700B661C1 /* TOPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B141EF7688700B661C1 /* TOPageTitleView.m */; };
-		EA821B1B1EF7CB6600B661C1 /* TOPageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B1A1EF7CB6600B661C1 /* TOPageTitleButton.m */; };
-		EA821B1F1EF90A2C00B661C1 /* TOPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B1E1EF90A2C00B661C1 /* TOPageItem.m */; };
-		EA821B231EF921FA00B661C1 /* AutoLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B221EF921FA00B661C1 /* AutoLayoutHelper.m */; };
-		EA821B261EFA68B700B661C1 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B251EFA68B700B661C1 /* IndexViewController.m */; };
-		EA821B3C1EFB54CF00B661C1 /* SizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B3A1EFB54CF00B661C1 /* SizeViewController.m */; };
-		EA821B3D1EFB54CF00B661C1 /* SizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA821B3B1EFB54CF00B661C1 /* SizeViewController.xib */; };
-		EA821B411EFB592500B661C1 /* ContentSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA821B401EFB592500B661C1 /* ContentSettingsViewController.m */; };
-		EA94DA8A1EFCEF8F00D9241B /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA94DA891EFCEF8F00D9241B /* ExampleViewController.m */; };
+		EA02B3B7225EDEF6005F5A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3B6225EDEF6005F5A3A /* AppDelegate.m */; };
+		EA02B3BD225EDEF6005F5A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3BB225EDEF6005F5A3A /* Main.storyboard */; };
+		EA02B3BF225EDEF7005F5A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3BE225EDEF7005F5A3A /* Assets.xcassets */; };
+		EA02B3C2225EDEF7005F5A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3C0225EDEF7005F5A3A /* LaunchScreen.storyboard */; };
+		EA02B3C5225EDEF7005F5A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3C4225EDEF7005F5A3A /* main.m */; };
+		EA02B3CF225EDEF8005F5A3A /* TOPageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3CE225EDEF8005F5A3A /* TOPageViewTests.m */; };
+		EA02B3DA225EDEF8005F5A3A /* TOPageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3D9225EDEF8005F5A3A /* TOPageViewUITests.m */; };
+		EA02B3F3225EDF57005F5A3A /* TOPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3E9225EDF57005F5A3A /* TOPageTitleView.m */; };
+		EA02B3F4225EDF57005F5A3A /* TOPageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3EE225EDF57005F5A3A /* TOPageTitleButton.m */; };
+		EA02B3F5225EDF57005F5A3A /* TOPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3F0225EDF57005F5A3A /* TOPageViewController.m */; };
+		EA02B3F6225EDF57005F5A3A /* TOPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3F1225EDF57005F5A3A /* TOPageItem.m */; };
+		EA02B3F7225EDF57005F5A3A /* AutoLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3F2225EDF57005F5A3A /* AutoLayoutHelper.m */; };
+		EA02B407225EDFA5005F5A3A /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3F8225EDFA5005F5A3A /* ExampleViewController.m */; };
+		EA02B408225EDFA5005F5A3A /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3F9225EDFA5005F5A3A /* IndexViewController.m */; };
+		EA02B409225EDFA5005F5A3A /* ContentSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3FC225EDFA5005F5A3A /* ContentSettingsViewController.m */; };
+		EA02B40A225EDFA5005F5A3A /* StyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3FE225EDFA5005F5A3A /* StyleViewController.m */; };
+		EA02B40B225EDFA5005F5A3A /* StyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3FF225EDFA5005F5A3A /* StyleViewController.xib */; };
+		EA02B40C225EDFA5005F5A3A /* SizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA02B403225EDFA5005F5A3A /* SizeViewController.xib */; };
+		EA02B40D225EDFA5005F5A3A /* SizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B404225EDFA5005F5A3A /* SizeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EA821ADF1EF7633E00B661C1 /* PBXContainerItemProxy */ = {
+		EA02B3CB225EDEF8005F5A3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EA821ABD1EF7633E00B661C1 /* Project object */;
+			containerPortal = EA02B3AA225EDEF6005F5A3A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EA821AC41EF7633E00B661C1;
+			remoteGlobalIDString = EA02B3B1225EDEF6005F5A3A;
 			remoteInfo = TOPageView;
 		};
-		EA821AEA1EF7633E00B661C1 /* PBXContainerItemProxy */ = {
+		EA02B3D6225EDEF8005F5A3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EA821ABD1EF7633E00B661C1 /* Project object */;
+			containerPortal = EA02B3AA225EDEF6005F5A3A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EA821AC41EF7633E00B661C1;
+			remoteGlobalIDString = EA02B3B1225EDEF6005F5A3A;
 			remoteInfo = TOPageView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA821AC51EF7633E00B661C1 /* TOPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA821ADE1EF7633E00B661C1 /* TOPageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOPageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA821AE91EF7633E00B661C1 /* TOPageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOPageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA821AFD1EF7659300B661C1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EA821AFE1EF7659300B661C1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA821AFF1EF7659300B661C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EA821B011EF7659300B661C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EA821B041EF7659300B661C1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA821B051EF7659300B661C1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EA821B0F1EF765B300B661C1 /* TOPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOPageView.h; sourceTree = "<group>"; };
-		EA821B101EF7685B00B661C1 /* TOPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageViewController.h; sourceTree = "<group>"; };
-		EA821B111EF7685B00B661C1 /* TOPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageViewController.m; sourceTree = "<group>"; };
-		EA821B131EF7688700B661C1 /* TOPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageTitleView.h; sourceTree = "<group>"; };
-		EA821B141EF7688700B661C1 /* TOPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageTitleView.m; sourceTree = "<group>"; };
-		EA821B191EF7CB6600B661C1 /* TOPageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageTitleButton.h; sourceTree = "<group>"; };
-		EA821B1A1EF7CB6600B661C1 /* TOPageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageTitleButton.m; sourceTree = "<group>"; };
-		EA821B1D1EF90A2C00B661C1 /* TOPageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageItem.h; sourceTree = "<group>"; };
-		EA821B1E1EF90A2C00B661C1 /* TOPageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageItem.m; sourceTree = "<group>"; };
-		EA821B211EF921FA00B661C1 /* AutoLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutHelper.h; sourceTree = "<group>"; };
-		EA821B221EF921FA00B661C1 /* AutoLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutHelper.m; sourceTree = "<group>"; };
-		EA821B241EFA68B700B661C1 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
-		EA821B251EFA68B700B661C1 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
-		EA821B391EFB54CF00B661C1 /* SizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeViewController.h; sourceTree = "<group>"; };
-		EA821B3A1EFB54CF00B661C1 /* SizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeViewController.m; sourceTree = "<group>"; };
-		EA821B3B1EFB54CF00B661C1 /* SizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeViewController.xib; sourceTree = "<group>"; };
-		EA821B3F1EFB592500B661C1 /* ContentSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSettingsViewController.h; sourceTree = "<group>"; };
-		EA821B401EFB592500B661C1 /* ContentSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSettingsViewController.m; sourceTree = "<group>"; };
-		EA94DA881EFCEF8F00D9241B /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
-		EA94DA891EFCEF8F00D9241B /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		EA02B3B2225EDEF6005F5A3A /* TOPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA02B3B5225EDEF6005F5A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA02B3B6225EDEF6005F5A3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA02B3BC225EDEF6005F5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA02B3BE225EDEF7005F5A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA02B3C1225EDEF7005F5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA02B3C3225EDEF7005F5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA02B3C4225EDEF7005F5A3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA02B3CA225EDEF8005F5A3A /* TOPageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOPageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA02B3CE225EDEF8005F5A3A /* TOPageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOPageViewTests.m; sourceTree = "<group>"; };
+		EA02B3D0225EDEF8005F5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA02B3D5225EDEF8005F5A3A /* TOPageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOPageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA02B3D9225EDEF8005F5A3A /* TOPageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOPageViewUITests.m; sourceTree = "<group>"; };
+		EA02B3DB225EDEF8005F5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA02B3E8225EDF57005F5A3A /* TOPageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageTitleButton.h; sourceTree = "<group>"; };
+		EA02B3E9225EDF57005F5A3A /* TOPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageTitleView.m; sourceTree = "<group>"; };
+		EA02B3EA225EDF57005F5A3A /* TOPageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageItem.h; sourceTree = "<group>"; };
+		EA02B3EB225EDF57005F5A3A /* TOPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageViewController.h; sourceTree = "<group>"; };
+		EA02B3EC225EDF57005F5A3A /* TOPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageView.h; sourceTree = "<group>"; };
+		EA02B3ED225EDF57005F5A3A /* AutoLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutHelper.h; sourceTree = "<group>"; };
+		EA02B3EE225EDF57005F5A3A /* TOPageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageTitleButton.m; sourceTree = "<group>"; };
+		EA02B3EF225EDF57005F5A3A /* TOPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPageTitleView.h; sourceTree = "<group>"; };
+		EA02B3F0225EDF57005F5A3A /* TOPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageViewController.m; sourceTree = "<group>"; };
+		EA02B3F1225EDF57005F5A3A /* TOPageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPageItem.m; sourceTree = "<group>"; };
+		EA02B3F2225EDF57005F5A3A /* AutoLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutHelper.m; sourceTree = "<group>"; };
+		EA02B3F8225EDFA5005F5A3A /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		EA02B3F9225EDFA5005F5A3A /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		EA02B3FB225EDFA5005F5A3A /* ContentSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSettingsViewController.h; sourceTree = "<group>"; };
+		EA02B3FC225EDFA5005F5A3A /* ContentSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSettingsViewController.m; sourceTree = "<group>"; };
+		EA02B3FE225EDFA5005F5A3A /* StyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleViewController.m; sourceTree = "<group>"; };
+		EA02B3FF225EDFA5005F5A3A /* StyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StyleViewController.xib; sourceTree = "<group>"; };
+		EA02B400225EDFA5005F5A3A /* StyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleViewController.h; sourceTree = "<group>"; };
+		EA02B401225EDFA5005F5A3A /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		EA02B403225EDFA5005F5A3A /* SizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeViewController.xib; sourceTree = "<group>"; };
+		EA02B404225EDFA5005F5A3A /* SizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeViewController.m; sourceTree = "<group>"; };
+		EA02B405225EDFA5005F5A3A /* SizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeViewController.h; sourceTree = "<group>"; };
+		EA02B406225EDFA5005F5A3A /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA821AC21EF7633E00B661C1 /* Frameworks */ = {
+		EA02B3AF225EDEF6005F5A3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA821ADB1EF7633E00B661C1 /* Frameworks */ = {
+		EA02B3C7225EDEF8005F5A3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA821AE61EF7633E00B661C1 /* Frameworks */ = {
+		EA02B3D2225EDEF8005F5A3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,107 +110,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA821ABC1EF7633E00B661C1 = {
+		EA02B3A9225EDEF6005F5A3A = {
 			isa = PBXGroup;
 			children = (
-				EA821AFB1EF7659300B661C1 /* TOPageView */,
-				EA821AFC1EF7659300B661C1 /* TOPageViewExample */,
-				EA821AC61EF7633E00B661C1 /* Products */,
+				EA02B3E7225EDF57005F5A3A /* TOPageView */,
+				EA02B3B4225EDEF6005F5A3A /* TOPageViewExample */,
+				EA02B3CD225EDEF8005F5A3A /* TOPageViewTests */,
+				EA02B3D8225EDEF8005F5A3A /* TOPageViewUITests */,
+				EA02B3B3225EDEF6005F5A3A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EA821AC61EF7633E00B661C1 /* Products */ = {
+		EA02B3B3225EDEF6005F5A3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA821AC51EF7633E00B661C1 /* TOPageView.app */,
-				EA821ADE1EF7633E00B661C1 /* TOPageViewTests.xctest */,
-				EA821AE91EF7633E00B661C1 /* TOPageViewUITests.xctest */,
+				EA02B3B2225EDEF6005F5A3A /* TOPageView.app */,
+				EA02B3CA225EDEF8005F5A3A /* TOPageViewTests.xctest */,
+				EA02B3D5225EDEF8005F5A3A /* TOPageViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA821AFB1EF7659300B661C1 /* TOPageView */ = {
+		EA02B3B4225EDEF6005F5A3A /* TOPageViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				EA821B201EF921E000B661C1 /* tools */,
-				EA821B1C1EF90A0400B661C1 /* models */,
-				EA821B0F1EF765B300B661C1 /* TOPageView.h */,
-				EA821B101EF7685B00B661C1 /* TOPageViewController.h */,
-				EA821B111EF7685B00B661C1 /* TOPageViewController.m */,
-				EA821B131EF7688700B661C1 /* TOPageTitleView.h */,
-				EA821B141EF7688700B661C1 /* TOPageTitleView.m */,
-				EA821B191EF7CB6600B661C1 /* TOPageTitleButton.h */,
-				EA821B1A1EF7CB6600B661C1 /* TOPageTitleButton.m */,
-			);
-			path = TOPageView;
-			sourceTree = "<group>";
-		};
-		EA821AFC1EF7659300B661C1 /* TOPageViewExample */ = {
-			isa = PBXGroup;
-			children = (
-				EA821B3E1EFB592500B661C1 /* content */,
-				EA821B341EFB54AC00B661C1 /* size */,
-				EA821AFD1EF7659300B661C1 /* AppDelegate.h */,
-				EA821AFE1EF7659300B661C1 /* AppDelegate.m */,
-				EA821AFF1EF7659300B661C1 /* Assets.xcassets */,
-				EA821B001EF7659300B661C1 /* LaunchScreen.storyboard */,
-				EA821B041EF7659300B661C1 /* Info.plist */,
-				EA821B051EF7659300B661C1 /* main.m */,
-				EA821B241EFA68B700B661C1 /* IndexViewController.h */,
-				EA821B251EFA68B700B661C1 /* IndexViewController.m */,
-				EA94DA881EFCEF8F00D9241B /* ExampleViewController.h */,
-				EA94DA891EFCEF8F00D9241B /* ExampleViewController.m */,
+				EA02B3FA225EDFA5005F5A3A /* content */,
+				EA02B406225EDFA5005F5A3A /* ExampleViewController.h */,
+				EA02B3F8225EDFA5005F5A3A /* ExampleViewController.m */,
+				EA02B401225EDFA5005F5A3A /* IndexViewController.h */,
+				EA02B3F9225EDFA5005F5A3A /* IndexViewController.m */,
+				EA02B402225EDFA5005F5A3A /* size */,
+				EA02B3FD225EDFA5005F5A3A /* style */,
+				EA02B3B5225EDEF6005F5A3A /* AppDelegate.h */,
+				EA02B3B6225EDEF6005F5A3A /* AppDelegate.m */,
+				EA02B3BB225EDEF6005F5A3A /* Main.storyboard */,
+				EA02B3BE225EDEF7005F5A3A /* Assets.xcassets */,
+				EA02B3C0225EDEF7005F5A3A /* LaunchScreen.storyboard */,
+				EA02B3C3225EDEF7005F5A3A /* Info.plist */,
+				EA02B3C4225EDEF7005F5A3A /* main.m */,
 			);
 			path = TOPageViewExample;
 			sourceTree = "<group>";
 		};
-		EA821B1C1EF90A0400B661C1 /* models */ = {
+		EA02B3CD225EDEF8005F5A3A /* TOPageViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA821B1D1EF90A2C00B661C1 /* TOPageItem.h */,
-				EA821B1E1EF90A2C00B661C1 /* TOPageItem.m */,
+				EA02B3CE225EDEF8005F5A3A /* TOPageViewTests.m */,
+				EA02B3D0225EDEF8005F5A3A /* Info.plist */,
 			);
-			path = models;
+			path = TOPageViewTests;
 			sourceTree = "<group>";
 		};
-		EA821B201EF921E000B661C1 /* tools */ = {
+		EA02B3D8225EDEF8005F5A3A /* TOPageViewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EA821B211EF921FA00B661C1 /* AutoLayoutHelper.h */,
-				EA821B221EF921FA00B661C1 /* AutoLayoutHelper.m */,
+				EA02B3D9225EDEF8005F5A3A /* TOPageViewUITests.m */,
+				EA02B3DB225EDEF8005F5A3A /* Info.plist */,
 			);
-			path = tools;
+			path = TOPageViewUITests;
 			sourceTree = "<group>";
 		};
-		EA821B341EFB54AC00B661C1 /* size */ = {
+		EA02B3E7225EDF57005F5A3A /* TOPageView */ = {
 			isa = PBXGroup;
 			children = (
-				EA821B391EFB54CF00B661C1 /* SizeViewController.h */,
-				EA821B3A1EFB54CF00B661C1 /* SizeViewController.m */,
-				EA821B3B1EFB54CF00B661C1 /* SizeViewController.xib */,
+				EA02B3E8225EDF57005F5A3A /* TOPageTitleButton.h */,
+				EA02B3E9225EDF57005F5A3A /* TOPageTitleView.m */,
+				EA02B3EA225EDF57005F5A3A /* TOPageItem.h */,
+				EA02B3EB225EDF57005F5A3A /* TOPageViewController.h */,
+				EA02B3EC225EDF57005F5A3A /* TOPageView.h */,
+				EA02B3ED225EDF57005F5A3A /* AutoLayoutHelper.h */,
+				EA02B3EE225EDF57005F5A3A /* TOPageTitleButton.m */,
+				EA02B3EF225EDF57005F5A3A /* TOPageTitleView.h */,
+				EA02B3F0225EDF57005F5A3A /* TOPageViewController.m */,
+				EA02B3F1225EDF57005F5A3A /* TOPageItem.m */,
+				EA02B3F2225EDF57005F5A3A /* AutoLayoutHelper.m */,
 			);
-			path = size;
+			path = TOPageView;
 			sourceTree = "<group>";
 		};
-		EA821B3E1EFB592500B661C1 /* content */ = {
+		EA02B3FA225EDFA5005F5A3A /* content */ = {
 			isa = PBXGroup;
 			children = (
-				EA821B3F1EFB592500B661C1 /* ContentSettingsViewController.h */,
-				EA821B401EFB592500B661C1 /* ContentSettingsViewController.m */,
+				EA02B3FB225EDFA5005F5A3A /* ContentSettingsViewController.h */,
+				EA02B3FC225EDFA5005F5A3A /* ContentSettingsViewController.m */,
 			);
 			path = content;
+			sourceTree = "<group>";
+		};
+		EA02B3FD225EDFA5005F5A3A /* style */ = {
+			isa = PBXGroup;
+			children = (
+				EA02B3FE225EDFA5005F5A3A /* StyleViewController.m */,
+				EA02B3FF225EDFA5005F5A3A /* StyleViewController.xib */,
+				EA02B400225EDFA5005F5A3A /* StyleViewController.h */,
+			);
+			path = style;
+			sourceTree = "<group>";
+		};
+		EA02B402225EDFA5005F5A3A /* size */ = {
+			isa = PBXGroup;
+			children = (
+				EA02B403225EDFA5005F5A3A /* SizeViewController.xib */,
+				EA02B404225EDFA5005F5A3A /* SizeViewController.m */,
+				EA02B405225EDFA5005F5A3A /* SizeViewController.h */,
+			);
+			path = size;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA821AC41EF7633E00B661C1 /* TOPageView */ = {
+		EA02B3B1225EDEF6005F5A3A /* TOPageView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA821AF21EF7633E00B661C1 /* Build configuration list for PBXNativeTarget "TOPageView" */;
+			buildConfigurationList = EA02B3DE225EDEF8005F5A3A /* Build configuration list for PBXNativeTarget "TOPageView" */;
 			buildPhases = (
-				EA821AC11EF7633E00B661C1 /* Sources */,
-				EA821AC21EF7633E00B661C1 /* Frameworks */,
-				EA821AC31EF7633E00B661C1 /* Resources */,
+				EA02B3AE225EDEF6005F5A3A /* Sources */,
+				EA02B3AF225EDEF6005F5A3A /* Frameworks */,
+				EA02B3B0225EDEF6005F5A3A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -206,114 +234,108 @@
 			);
 			name = TOPageView;
 			productName = TOPageView;
-			productReference = EA821AC51EF7633E00B661C1 /* TOPageView.app */;
+			productReference = EA02B3B2225EDEF6005F5A3A /* TOPageView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA821ADD1EF7633E00B661C1 /* TOPageViewTests */ = {
+		EA02B3C9225EDEF8005F5A3A /* TOPageViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA821AF51EF7633E00B661C1 /* Build configuration list for PBXNativeTarget "TOPageViewTests" */;
+			buildConfigurationList = EA02B3E1225EDEF8005F5A3A /* Build configuration list for PBXNativeTarget "TOPageViewTests" */;
 			buildPhases = (
-				EA821ADA1EF7633E00B661C1 /* Sources */,
-				EA821ADB1EF7633E00B661C1 /* Frameworks */,
-				EA821ADC1EF7633E00B661C1 /* Resources */,
+				EA02B3C6225EDEF8005F5A3A /* Sources */,
+				EA02B3C7225EDEF8005F5A3A /* Frameworks */,
+				EA02B3C8225EDEF8005F5A3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EA821AE01EF7633E00B661C1 /* PBXTargetDependency */,
+				EA02B3CC225EDEF8005F5A3A /* PBXTargetDependency */,
 			);
 			name = TOPageViewTests;
 			productName = TOPageViewTests;
-			productReference = EA821ADE1EF7633E00B661C1 /* TOPageViewTests.xctest */;
+			productReference = EA02B3CA225EDEF8005F5A3A /* TOPageViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EA821AE81EF7633E00B661C1 /* TOPageViewUITests */ = {
+		EA02B3D4225EDEF8005F5A3A /* TOPageViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA821AF81EF7633E00B661C1 /* Build configuration list for PBXNativeTarget "TOPageViewUITests" */;
+			buildConfigurationList = EA02B3E4225EDEF8005F5A3A /* Build configuration list for PBXNativeTarget "TOPageViewUITests" */;
 			buildPhases = (
-				EA821AE51EF7633E00B661C1 /* Sources */,
-				EA821AE61EF7633E00B661C1 /* Frameworks */,
-				EA821AE71EF7633E00B661C1 /* Resources */,
+				EA02B3D1225EDEF8005F5A3A /* Sources */,
+				EA02B3D2225EDEF8005F5A3A /* Frameworks */,
+				EA02B3D3225EDEF8005F5A3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EA821AEB1EF7633E00B661C1 /* PBXTargetDependency */,
+				EA02B3D7225EDEF8005F5A3A /* PBXTargetDependency */,
 			);
 			name = TOPageViewUITests;
 			productName = TOPageViewUITests;
-			productReference = EA821AE91EF7633E00B661C1 /* TOPageViewUITests.xctest */;
+			productReference = EA02B3D5225EDEF8005F5A3A /* TOPageViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EA821ABD1EF7633E00B661C1 /* Project object */ = {
+		EA02B3AA225EDEF6005F5A3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = Tony;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = TonyJR;
 				TargetAttributes = {
-					EA821AC41EF7633E00B661C1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8YWC8ZUV92;
-						ProvisioningStyle = Automatic;
+					EA02B3B1225EDEF6005F5A3A = {
+						CreatedOnToolsVersion = 10.2;
 					};
-					EA821ADD1EF7633E00B661C1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = C353C7Q7J9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EA821AC41EF7633E00B661C1;
+					EA02B3C9225EDEF8005F5A3A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = EA02B3B1225EDEF6005F5A3A;
 					};
-					EA821AE81EF7633E00B661C1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = C353C7Q7J9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EA821AC41EF7633E00B661C1;
+					EA02B3D4225EDEF8005F5A3A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = EA02B3B1225EDEF6005F5A3A;
 					};
 				};
 			};
-			buildConfigurationList = EA821AC01EF7633E00B661C1 /* Build configuration list for PBXProject "TOPageView" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = EA02B3AD225EDEF6005F5A3A /* Build configuration list for PBXProject "TOPageView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
-			mainGroup = EA821ABC1EF7633E00B661C1;
-			productRefGroup = EA821AC61EF7633E00B661C1 /* Products */;
+			mainGroup = EA02B3A9225EDEF6005F5A3A;
+			productRefGroup = EA02B3B3225EDEF6005F5A3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA821AC41EF7633E00B661C1 /* TOPageView */,
-				EA821ADD1EF7633E00B661C1 /* TOPageViewTests */,
-				EA821AE81EF7633E00B661C1 /* TOPageViewUITests */,
+				EA02B3B1225EDEF6005F5A3A /* TOPageView */,
+				EA02B3C9225EDEF8005F5A3A /* TOPageViewTests */,
+				EA02B3D4225EDEF8005F5A3A /* TOPageViewUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EA821AC31EF7633E00B661C1 /* Resources */ = {
+		EA02B3B0225EDEF6005F5A3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA821B3D1EFB54CF00B661C1 /* SizeViewController.xib in Resources */,
-				EA821B0C1EF7659300B661C1 /* Info.plist in Resources */,
-				EA821B091EF7659300B661C1 /* Assets.xcassets in Resources */,
-				EA821B0A1EF7659300B661C1 /* LaunchScreen.storyboard in Resources */,
+				EA02B40B225EDFA5005F5A3A /* StyleViewController.xib in Resources */,
+				EA02B40C225EDFA5005F5A3A /* SizeViewController.xib in Resources */,
+				EA02B3C2225EDEF7005F5A3A /* LaunchScreen.storyboard in Resources */,
+				EA02B3BF225EDEF7005F5A3A /* Assets.xcassets in Resources */,
+				EA02B3BD225EDEF6005F5A3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA821ADC1EF7633E00B661C1 /* Resources */ = {
+		EA02B3C8225EDEF8005F5A3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA821AE71EF7633E00B661C1 /* Resources */ = {
+		EA02B3D3225EDEF8005F5A3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,58 +345,69 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EA821AC11EF7633E00B661C1 /* Sources */ = {
+		EA02B3AE225EDEF6005F5A3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA821B121EF7685B00B661C1 /* TOPageViewController.m in Sources */,
-				EA94DA8A1EFCEF8F00D9241B /* ExampleViewController.m in Sources */,
-				EA821B231EF921FA00B661C1 /* AutoLayoutHelper.m in Sources */,
-				EA821B151EF7688700B661C1 /* TOPageTitleView.m in Sources */,
-				EA821B3C1EFB54CF00B661C1 /* SizeViewController.m in Sources */,
-				EA821B0D1EF7659300B661C1 /* main.m in Sources */,
-				EA821B081EF7659300B661C1 /* AppDelegate.m in Sources */,
-				EA821B1F1EF90A2C00B661C1 /* TOPageItem.m in Sources */,
-				EA821B1B1EF7CB6600B661C1 /* TOPageTitleButton.m in Sources */,
-				EA821B411EFB592500B661C1 /* ContentSettingsViewController.m in Sources */,
-				EA821B261EFA68B700B661C1 /* IndexViewController.m in Sources */,
+				EA02B3F4225EDF57005F5A3A /* TOPageTitleButton.m in Sources */,
+				EA02B3F3225EDF57005F5A3A /* TOPageTitleView.m in Sources */,
+				EA02B407225EDFA5005F5A3A /* ExampleViewController.m in Sources */,
+				EA02B3C5225EDEF7005F5A3A /* main.m in Sources */,
+				EA02B40D225EDFA5005F5A3A /* SizeViewController.m in Sources */,
+				EA02B3F7225EDF57005F5A3A /* AutoLayoutHelper.m in Sources */,
+				EA02B3F5225EDF57005F5A3A /* TOPageViewController.m in Sources */,
+				EA02B3F6225EDF57005F5A3A /* TOPageItem.m in Sources */,
+				EA02B40A225EDFA5005F5A3A /* StyleViewController.m in Sources */,
+				EA02B409225EDFA5005F5A3A /* ContentSettingsViewController.m in Sources */,
+				EA02B3B7225EDEF6005F5A3A /* AppDelegate.m in Sources */,
+				EA02B408225EDFA5005F5A3A /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA821ADA1EF7633E00B661C1 /* Sources */ = {
+		EA02B3C6225EDEF8005F5A3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA02B3CF225EDEF8005F5A3A /* TOPageViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA821AE51EF7633E00B661C1 /* Sources */ = {
+		EA02B3D1225EDEF8005F5A3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA02B3DA225EDEF8005F5A3A /* TOPageViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EA821AE01EF7633E00B661C1 /* PBXTargetDependency */ = {
+		EA02B3CC225EDEF8005F5A3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA821AC41EF7633E00B661C1 /* TOPageView */;
-			targetProxy = EA821ADF1EF7633E00B661C1 /* PBXContainerItemProxy */;
+			target = EA02B3B1225EDEF6005F5A3A /* TOPageView */;
+			targetProxy = EA02B3CB225EDEF8005F5A3A /* PBXContainerItemProxy */;
 		};
-		EA821AEB1EF7633E00B661C1 /* PBXTargetDependency */ = {
+		EA02B3D7225EDEF8005F5A3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA821AC41EF7633E00B661C1 /* TOPageView */;
-			targetProxy = EA821AEA1EF7633E00B661C1 /* PBXContainerItemProxy */;
+			target = EA02B3B1225EDEF6005F5A3A /* TOPageView */;
+			targetProxy = EA02B3D6225EDEF8005F5A3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA821B001EF7659300B661C1 /* LaunchScreen.storyboard */ = {
+		EA02B3BB225EDEF6005F5A3A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EA821B011EF7659300B661C1 /* Base */,
+				EA02B3BC225EDEF6005F5A3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA02B3C0225EDEF7005F5A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA02B3C1225EDEF7005F5A3A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -382,33 +415,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EA821AF01EF7633E00B661C1 /* Debug */ = {
+		EA02B3DC225EDEF8005F5A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -422,40 +466,52 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		EA821AF11EF7633E00B661C1 /* Release */ = {
+		EA02B3DD225EDEF8005F5A3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -463,85 +519,120 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		EA821AF31EF7633E00B661C1 /* Debug */ = {
+		EA02B3DF225EDEF8005F5A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = TOPageViewExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TonyJR.TOPageView;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coco3g.tools.TOPageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EA821AF41EF7633E00B661C1 /* Release */ = {
+		EA02B3E0225EDEF8005F5A3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = TOPageViewExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TonyJR.TOPageView;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coco3g.tools.TOPageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		EA821AF61EF7633E00B661C1 /* Debug */ = {
+		EA02B3E2225EDEF8005F5A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = C353C7Q7J9;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = TOPageViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TonyJR.TOPageViewTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coco3g.tools.TOPageViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOPageView.app/TOPageView";
 			};
 			name = Debug;
 		};
-		EA821AF71EF7633E00B661C1 /* Release */ = {
+		EA02B3E3225EDEF8005F5A3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = C353C7Q7J9;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = TOPageViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TonyJR.TOPageViewTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coco3g.tools.TOPageViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOPageView.app/TOPageView";
 			};
 			name = Release;
 		};
-		EA821AF91EF7633E00B661C1 /* Debug */ = {
+		EA02B3E5225EDEF8005F5A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = C353C7Q7J9;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = TOPageViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TonyJR.TOPageViewUITests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coco3g.tools.TOPageViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TOPageView;
 			};
 			name = Debug;
 		};
-		EA821AFA1EF7633E00B661C1 /* Release */ = {
+		EA02B3E6225EDEF8005F5A3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = C353C7Q7J9;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = TOPageViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TonyJR.TOPageViewUITests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coco3g.tools.TOPageViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TOPageView;
 			};
 			name = Release;
@@ -549,43 +640,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA821AC01EF7633E00B661C1 /* Build configuration list for PBXProject "TOPageView" */ = {
+		EA02B3AD225EDEF6005F5A3A /* Build configuration list for PBXProject "TOPageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA821AF01EF7633E00B661C1 /* Debug */,
-				EA821AF11EF7633E00B661C1 /* Release */,
+				EA02B3DC225EDEF8005F5A3A /* Debug */,
+				EA02B3DD225EDEF8005F5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA821AF21EF7633E00B661C1 /* Build configuration list for PBXNativeTarget "TOPageView" */ = {
+		EA02B3DE225EDEF8005F5A3A /* Build configuration list for PBXNativeTarget "TOPageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA821AF31EF7633E00B661C1 /* Debug */,
-				EA821AF41EF7633E00B661C1 /* Release */,
+				EA02B3DF225EDEF8005F5A3A /* Debug */,
+				EA02B3E0225EDEF8005F5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA821AF51EF7633E00B661C1 /* Build configuration list for PBXNativeTarget "TOPageViewTests" */ = {
+		EA02B3E1225EDEF8005F5A3A /* Build configuration list for PBXNativeTarget "TOPageViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA821AF61EF7633E00B661C1 /* Debug */,
-				EA821AF71EF7633E00B661C1 /* Release */,
+				EA02B3E2225EDEF8005F5A3A /* Debug */,
+				EA02B3E3225EDEF8005F5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA821AF81EF7633E00B661C1 /* Build configuration list for PBXNativeTarget "TOPageViewUITests" */ = {
+		EA02B3E4225EDEF8005F5A3A /* Build configuration list for PBXNativeTarget "TOPageViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA821AF91EF7633E00B661C1 /* Debug */,
-				EA821AFA1EF7633E00B661C1 /* Release */,
+				EA02B3E5225EDEF8005F5A3A /* Debug */,
+				EA02B3E6225EDEF8005F5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EA821ABD1EF7633E00B661C1 /* Project object */;
+	rootObject = EA02B3AA225EDEF6005F5A3A /* Project object */;
 }
