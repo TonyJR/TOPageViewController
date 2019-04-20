@@ -461,17 +461,27 @@ IB_DESIGNABLE
     if ([item.icon isKindOfClass:[UIImage class]]) {
         [button setImage:(UIImage *)item.icon forState:UIControlStateNormal];
     }else if ([item.icon isKindOfClass:[NSString class]]) {
-        SEL sel = NSSelectorFromString(@"sd_setImageWithURL:");
+        SEL sel = NSSelectorFromString(@"sd_setImageWithURL: forState:");
         if ([button respondsToSelector:sel]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            
-            [button performSelector:sel withObject:item.icon];
-            
+            [button performSelector:sel withObject:item.icon withObject:@(UIControlStateNormal)];
 #pragma clang diagnostic pop
         }
-        
     }
+    
+    if ([item.highlightedIcon isKindOfClass:[UIImage class]]) {
+        [button setImage:(UIImage *)item.highlightedIcon forState:UIControlStateSelected];
+    }else if ([item.highlightedIcon isKindOfClass:[NSString class]]) {
+        SEL sel = NSSelectorFromString(@"sd_setImageWithURL: forState:");
+        if ([button respondsToSelector:sel]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            [button performSelector:sel withObject:item.highlightedIcon withObject:@(UIControlStateSelected)];
+#pragma clang diagnostic pop
+        }
+    }
+    
     [button addTarget:self action:@selector(buttonClickHandler:) forControlEvents:UIControlEventTouchUpInside];
     
     if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:willShowButton:forItem:)]) {
