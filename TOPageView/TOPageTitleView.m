@@ -291,8 +291,7 @@ IB_DESIGNABLE
     
 }
 
-- (void)setTitles:(NSArray<TOPageItem *> *)titles{
-    NSUInteger index = [titles indexOfObject:self.selectedItem];
+- (void)setTitles:(NSArray<TOPageItem *> *)titles index:(NSUInteger)index{
     
     _titles = [titles copy];
     [self setNeedsUpdateButtons];
@@ -310,6 +309,11 @@ IB_DESIGNABLE
     }else{
         _selectedIndex = -1;
     }
+}
+
+- (void)setTitles:(NSArray<TOPageItem *> *)titles{
+    NSUInteger index = [titles indexOfObject:self.selectedItem];
+    [self setTitles:titles index:index];
 }
 
 - (void)setIndicatorHeight:(CGFloat)indicatorHeight{
@@ -355,11 +359,11 @@ IB_DESIGNABLE
 }
 
 - (void)createButtons{
+    
+    TOPageTitleAlign align = self.align;
     if (self.titles.count) {
         NSMutableString *hVisualFormat = [NSMutableString string];
         
-        //        [vVisualFormat appendFormat:@"V:|"];
-        [hVisualFormat appendFormat:@"H:|"];
         UIView *spaceView;
         NSMutableDictionary *views = [NSMutableDictionary dictionary];
         for (int i=0; i<self.titles.count; i++) {
@@ -392,7 +396,12 @@ IB_DESIGNABLE
             if (!spaceView) {
                 spaceView = button.buttonLeftView;
                 views[@"space"] = spaceView;
-                [hVisualFormat appendFormat:@"[%@(>=%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                if (align == TOPageTitleAlignAverage) {
+                    [hVisualFormat appendFormat:@"[%@(>=%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                }else{
+                    [hVisualFormat appendFormat:@"[%@(==%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                }
+                
             }else{
                 [hVisualFormat appendFormat:@"[%@(==space)][%@][%@(==space)]",buttonLeftName,buttonName,buttonRightName];
             }
@@ -410,7 +419,45 @@ IB_DESIGNABLE
             [self.titleContentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vVisualFormat options:0 metrics:nil views:views]];
         }
         
-        [hVisualFormat appendString:@"|"];
+        switch (align) {
+            case TOPageTitleAlignLeft:
+                [hVisualFormat insertString:@"H:|" atIndex:0];
+                [hVisualFormat appendString:@"-(>=0)-|"];
+                break;
+            case TOPageTitleAlignRight:
+                [hVisualFormat insertString:@"H:|-(>=0)-" atIndex:0];
+                [hVisualFormat appendString:@"|"];
+                break;
+            case TOPageTitleAlignMiddle:
+            {
+                UIView *leftView = [UIView new];
+                UIView *rightView = [UIView new];
+                [self.titleContentView addSubview:leftView];
+                [self.titleContentView addSubview:rightView];
+                
+                [leftView setTranslatesAutoresizingMaskIntoConstraints:NO];
+                [rightView setTranslatesAutoresizingMaskIntoConstraints:NO];
+
+
+                views[@"leftView"] = leftView;
+                views[@"rightView"] = rightView;
+
+                [self.titleContentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[leftView]|" options:0 metrics:nil views:views]];
+                [self.titleContentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[rightView]|" options:0 metrics:nil views:views]];
+
+
+                [hVisualFormat insertString:@"H:|[leftView(>=0)]" atIndex:0];
+                [hVisualFormat appendString:@"[rightView(==leftView)]|"];
+            }
+                break;
+            case TOPageTitleAlignAverage:
+            default:
+                [hVisualFormat insertString:@"H:|" atIndex:0];
+                [hVisualFormat appendString:@"|"];
+                break;
+        }
+        
+        
         [self.titleContentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:hVisualFormat options:0 metrics:nil views:views]];
         
     }

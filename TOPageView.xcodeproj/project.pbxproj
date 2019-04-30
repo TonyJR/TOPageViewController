@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EA02B3B7225EDEF6005F5A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3B6225EDEF6005F5A3A /* AppDelegate.m */; };
-		EA02B3BD225EDEF6005F5A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3BB225EDEF6005F5A3A /* Main.storyboard */; };
 		EA02B3BF225EDEF7005F5A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3BE225EDEF7005F5A3A /* Assets.xcassets */; };
 		EA02B3C2225EDEF7005F5A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02B3C0225EDEF7005F5A3A /* LaunchScreen.storyboard */; };
 		EA02B3C5225EDEF7005F5A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA02B3C4225EDEF7005F5A3A /* main.m */; };
@@ -49,7 +48,6 @@
 		EA02B3B2225EDEF6005F5A3A /* TOPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA02B3B5225EDEF6005F5A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA02B3B6225EDEF6005F5A3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA02B3BC225EDEF6005F5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA02B3BE225EDEF7005F5A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA02B3C1225EDEF7005F5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA02B3C3225EDEF7005F5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				EA02B3FD225EDFA5005F5A3A /* style */,
 				EA02B3B5225EDEF6005F5A3A /* AppDelegate.h */,
 				EA02B3B6225EDEF6005F5A3A /* AppDelegate.m */,
-				EA02B3BB225EDEF6005F5A3A /* Main.storyboard */,
 				EA02B3BE225EDEF7005F5A3A /* Assets.xcassets */,
 				EA02B3C0225EDEF7005F5A3A /* LaunchScreen.storyboard */,
 				EA02B3C3225EDEF7005F5A3A /* Info.plist */,
@@ -174,15 +171,15 @@
 			isa = PBXGroup;
 			children = (
 				EA02B3E8225EDF57005F5A3A /* TOPageTitleButton.h */,
-				EA02B3E9225EDF57005F5A3A /* TOPageTitleView.m */,
-				EA02B3EA225EDF57005F5A3A /* TOPageItem.h */,
-				EA02B3EB225EDF57005F5A3A /* TOPageViewController.h */,
-				EA02B3EC225EDF57005F5A3A /* TOPageView.h */,
-				EA02B3ED225EDF57005F5A3A /* AutoLayoutHelper.h */,
 				EA02B3EE225EDF57005F5A3A /* TOPageTitleButton.m */,
 				EA02B3EF225EDF57005F5A3A /* TOPageTitleView.h */,
-				EA02B3F0225EDF57005F5A3A /* TOPageViewController.m */,
+				EA02B3E9225EDF57005F5A3A /* TOPageTitleView.m */,
+				EA02B3EA225EDF57005F5A3A /* TOPageItem.h */,
 				EA02B3F1225EDF57005F5A3A /* TOPageItem.m */,
+				EA02B3EC225EDF57005F5A3A /* TOPageView.h */,
+				EA02B3EB225EDF57005F5A3A /* TOPageViewController.h */,
+				EA02B3F0225EDF57005F5A3A /* TOPageViewController.m */,
+				EA02B3ED225EDF57005F5A3A /* AutoLayoutHelper.h */,
 				EA02B3F2225EDF57005F5A3A /* AutoLayoutHelper.m */,
 			);
 			path = TOPageView;
@@ -324,7 +321,6 @@
 				EA02B40C225EDFA5005F5A3A /* SizeViewController.xib in Resources */,
 				EA02B3C2225EDEF7005F5A3A /* LaunchScreen.storyboard in Resources */,
 				EA02B3BF225EDEF7005F5A3A /* Assets.xcassets in Resources */,
-				EA02B3BD225EDEF6005F5A3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA02B3BB225EDEF6005F5A3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA02B3BC225EDEF6005F5A3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA02B3C0225EDEF7005F5A3A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

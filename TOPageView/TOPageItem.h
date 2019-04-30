@@ -18,6 +18,8 @@
 //This param should be a UIImage object, if SDWebImage ( https://github.com/rs/SDWebImage ) in your project it's also can be a NSString object.
 @property (nonatomic,strong) id icon;
 @property (nonatomic,strong) id highlightedIcon;
+@property (nonatomic,copy) BOOL(^clickHandler)(void);
+
 
 @property (nonatomic,strong) UIViewController *viewController;
 

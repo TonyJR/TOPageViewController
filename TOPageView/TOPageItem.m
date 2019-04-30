@@ -10,7 +10,6 @@
 
 @implementation TOPageItem
 
-
 + (instancetype)itemWithTitle:(NSString *)title{
     return [[self alloc] initWithTitle:title highlightedTitle:nil icon:nil highlightedIcon:nil viewController:nil];
 }

@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "TOPageItem.h"
 
+typedef enum : NSUInteger {
+    TOPageTitleAlignAverage,
+    TOPageTitleAlignLeft,
+    TOPageTitleAlignRight,
+    TOPageTitleAlignMiddle,
+} TOPageTitleAlign;
+
 @class TOPageTitleView;
 
 
@@ -26,41 +33,102 @@
 @property (nonatomic,assign) id<TOPageTitleViewDelegate> titleViewDelegate;
 
 #pragma mark - Params
-//if array is empty, selectedIndex == -1
+/**
+ All items
+ */
 @property (nonatomic,copy)NSArray<TOPageItem *> *titles;
-//-1 means no item selected
-@property (nonatomic,assign)IBInspectable NSInteger selectedIndex;
+
+/**
+ The index of selected button.
+ -1 means nothing selected.
+ */
+@property (nonatomic,assign) NSInteger selectedIndex;
+
+
+/**
+ The item of selected button.
+ */
 @property (nonatomic,readonly) TOPageItem *selectedItem;
 
-//Buttons list
+/**
+ All buttons created.
+ */
 @property (nonatomic,readonly,copy) NSArray<UIButton *> *buttons;
-//Indicator view
+
+/**
+ This is an indicator on selected button. You can add cornerRadius, dropShadow, mask...
+ */
 @property (nonatomic,readonly) UIImageView *indicatorView;
 
 #pragma mark - Style
-@property (nonatomic,assign)IBInspectable UIEdgeInsets contentInsets;
-//miniGap is the minimum value between buttons, default is 10.0f
-@property (nonatomic,assign)IBInspectable CGFloat miniGap;
-//default blackColor
-@property (nonatomic,strong)IBInspectable UIColor *titleColor;
-//default 0x1889E6
-@property (nonatomic,strong)IBInspectable UIColor *selectedTitleColor;
-//if null, the color is mixture of titleColor and titleColor
-@property (nonatomic,strong)IBInspectable UIColor *highlightedTitleColor;
-
-//default system font 14
-@property (nonatomic,strong)IBInspectable UIFont *textFont;
-//default system font 16
-@property (nonatomic,strong)IBInspectable UIFont *selectedTextFont;
+/**
+ Edge insets of titles. default {0,0,0,0}
+ */
+@property (nonatomic,assign) UIEdgeInsets contentInsets;
 
 
-//Indicator style
-//default 0x1889E6
-@property (nonatomic,strong)IBInspectable UIColor *indicatorColor;
-//default 4.0f
-@property (nonatomic,assign)IBInspectable CGFloat indicatorHeight;
-//default {0,0,0,0}
-@property (nonatomic,assign)IBInspectable UIEdgeInsets indicatorEdgeInsets;
+/**
+ MinGap is the maxmum value between buttons, default is 10.0f
+ */
+@property (nonatomic,assign) CGFloat miniGap;
+
+
+
+
+/**
+ Align of buttons.
+ */
+@property (nonatomic,assign) TOPageTitleAlign align;
+
+/**
+ TitleColor of button title with buttonStatusNomarl.
+ default blackColor
+ */
+@property (nonatomic,strong) UIColor *titleColor;
+
+
+/**
+ TitleColor of button title with buttonStatusSelected.
+ default 0x1889E6
+ */
+@property (nonatomic,strong) UIColor *selectedTitleColor;
+
+
+/**
+ TitleColor of button title with buttonStatusHighlightedl.
+ Default nil, means this color is mixture of titleColor and selectedTitleColor
+ */
+@property (nonatomic,strong) UIColor *highlightedTitleColor;
+
+
+/**
+ TextFont of button title with buttonStatusNormal. default system font 14
+ */
+@property (nonatomic,strong) UIFont *textFont;
+
+/**
+ TextFont of button title with buttonStatusSelected. default system font 16
+ */
+@property (nonatomic,strong) UIFont *selectedTextFont;
+
+
+
+#pragma mark - Indicator style
+/**
+ Color of indicator, default 0x1889E6
+ */
+@property (nonatomic,strong) UIColor *indicatorColor;
+
+/**
+ Height of indicator, default 4.0f.
+ */
+@property (nonatomic,assign) CGFloat indicatorHeight;
+
+
+/**
+ Edge insets of indicator, default {0,0,0,0}.
+ */
+@property (nonatomic,assign) UIEdgeInsets indicatorEdgeInsets;
 
 
 #pragma mark - methods
