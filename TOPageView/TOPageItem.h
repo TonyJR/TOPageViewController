@@ -19,6 +19,7 @@
 @property (nonatomic,strong) id icon;
 @property (nonatomic,strong) id highlightedIcon;
 @property (nonatomic,copy) BOOL(^clickHandler)(void);
+@property (nonatomic,strong) id userinfo;
 
 
 @property (nonatomic,strong) UIViewController *viewController;

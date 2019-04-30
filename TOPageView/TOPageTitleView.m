@@ -541,21 +541,26 @@ IB_DESIGNABLE
 #pragma mark - Events
 - (void)buttonClickHandler:(TOPageTitleButton *)button{
     NSInteger newIndex = button.buttonIndex;
-    if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:shouldSelectedIndex:)]) {
-        if ([self.titleViewDelegate pageTitleView:self shouldSelectedIndex:newIndex]) {
-            NSInteger oldIndex = self.selectedIndex;
-            self.selectedIndex = newIndex;
-            if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:didSelecteIndex:oldIndex:)]) {
-                [self.titleViewDelegate pageTitleView:self didSelecteIndex:self.selectedIndex oldIndex:oldIndex];
-            }
-        }
-    }else{
+    if ([self shouldSelectItemAtIndex:newIndex]) {
         NSInteger oldIndex = self.selectedIndex;
+        if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:willSelecteIndex:oldIndex:)]) {
+            [self.titleViewDelegate pageTitleView:self willSelecteIndex:self.selectedIndex oldIndex:oldIndex];
+        }
         self.selectedIndex = newIndex;
         if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:didSelecteIndex:oldIndex:)]) {
             [self.titleViewDelegate pageTitleView:self didSelecteIndex:self.selectedIndex oldIndex:oldIndex];
         }
     }
+}
+
+- (BOOL)shouldSelectItemAtIndex:(NSInteger)index{
+    TOPageItem *item = [self.titles objectAtIndex:index];
+    if (item && item.clickHandler) {
+        return item.clickHandler();
+    }else if ([self.titleViewDelegate respondsToSelector:@selector(pageTitleView:shouldSelectedIndex:)]) {
+        return [self.titleViewDelegate pageTitleView:self shouldSelectedIndex:index];
+    }
+    return YES;
 }
 
 #pragma mark - Public
