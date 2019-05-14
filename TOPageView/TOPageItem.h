@@ -21,6 +21,11 @@
 @property (nonatomic,copy) BOOL(^clickHandler)(void);
 @property (nonatomic,strong) id userinfo;
 
+/**
+ The min width of button
+ */
+@property (nonatomic,assign) CGFloat minWidth;
+
 
 @property (nonatomic,strong) UIViewController *viewController;
 

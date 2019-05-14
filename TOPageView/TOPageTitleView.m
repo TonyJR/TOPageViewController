@@ -367,7 +367,8 @@ IB_DESIGNABLE
         UIView *spaceView;
         NSMutableDictionary *views = [NSMutableDictionary dictionary];
         for (int i=0; i<self.titles.count; i++) {
-            TOPageTitleButton *button = [self factoryCreateButton:self.titles[i]];
+            TOPageItem *titleItem = self.titles[i];
+            TOPageTitleButton *button = [self factoryCreateButton:titleItem];
             button.buttonIndex = i;
             if (i == self.selectedIndex) {
                 button.selected = YES;
@@ -397,13 +398,26 @@ IB_DESIGNABLE
                 spaceView = button.buttonLeftView;
                 views[@"space"] = spaceView;
                 if (align == TOPageTitleAlignAverage) {
-                    [hVisualFormat appendFormat:@"[%@(>=%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                    if (titleItem.minWidth > 0) {
+                        [hVisualFormat appendFormat:@"[%@(>=%f)][%@(>=%f)][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,titleItem.minWidth,buttonRightName];
+                    }else{
+                        [hVisualFormat appendFormat:@"[%@(>=%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                    }
                 }else{
-                    [hVisualFormat appendFormat:@"[%@(==%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                    if (titleItem.minWidth > 0) {
+                        [hVisualFormat appendFormat:@"[%@(==%f)][%@(>=%f)][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,titleItem.minWidth,buttonRightName];
+                    }else{
+                        [hVisualFormat appendFormat:@"[%@(==%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
+                    }
                 }
                 
             }else{
-                [hVisualFormat appendFormat:@"[%@(==space)][%@][%@(==space)]",buttonLeftName,buttonName,buttonRightName];
+                if (titleItem.minWidth > 0) {
+                    [hVisualFormat appendFormat:@"[%@(==space)][%@(>=%f)][%@(==space)]",buttonLeftName,buttonName,titleItem.minWidth,buttonRightName];
+                }else{
+                    [hVisualFormat appendFormat:@"[%@(==space)][%@][%@(==space)]",buttonLeftName,buttonName,buttonRightName];
+                }
+                
             }
             
             //Vertical layout

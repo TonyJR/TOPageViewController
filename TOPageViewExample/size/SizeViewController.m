@@ -61,8 +61,13 @@
                                                    [TOPageItem itemWithTitle:@"服饰"],
                                                    [TOPageItem itemWithTitle:@"食品"],
                                                    [TOPageItem itemWithTitle:@"百货"],
+                                                   ({
+            TOPageItem *item = [TOPageItem itemWithTitle:@"测试宽度"];
+            item.minWidth = 400;
+            item;
+        }),
                                                    [TOPageItem itemWithTitle:@"数码"],
-                                                   [TOPageItem itemWithTitle:@"测试一下"],
+                                                   
                                                    ]];
     }
     return _titles;
