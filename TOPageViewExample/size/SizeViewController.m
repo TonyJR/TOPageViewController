@@ -42,6 +42,7 @@
     
     self.title = @"尺寸设置";
     self.titleView.titles = self.titles;
+    self.titleView.contentInsets = UIEdgeInsetsMake(0, -12, 0, 12);
 }
 
 
@@ -61,11 +62,6 @@
                                                    [TOPageItem itemWithTitle:@"服饰"],
                                                    [TOPageItem itemWithTitle:@"食品"],
                                                    [TOPageItem itemWithTitle:@"百货"],
-                                                   ({
-            TOPageItem *item = [TOPageItem itemWithTitle:@"测试宽度"];
-            item.minWidth = 400;
-            item;
-        }),
                                                    [TOPageItem itemWithTitle:@"数码"],
                                                    
                                                    ]];
@@ -94,6 +90,11 @@
                                                           [self.edgeLeft.text floatValue],
                                                           [self.edgeBottom.text floatValue],
                                                           [self.edgeRight.text floatValue]);
+    self.titleView.contentInsets = UIEdgeInsetsMake(
+                                                    [self.edgeTop.text floatValue],
+                                                    [self.edgeLeft.text floatValue],
+                                                    [self.edgeBottom.text floatValue],
+                                                    [self.edgeRight.text floatValue]);
 }
 
 - (IBAction)cornerRadiusChangeHandler:(UISwitch *)switchView{

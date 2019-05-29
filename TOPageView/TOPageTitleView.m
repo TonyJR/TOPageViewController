@@ -17,6 +17,7 @@
     //flag
     BOOL _needsUpdateButtons;
     BOOL _needsUpdateIndicator;
+    BOOL _needsUpdateScrollView;
     
     NSMutableArray<TOPageTitleButton *> *_buttons;
     UIImageView *_indicatorView;
@@ -87,41 +88,11 @@ IB_DESIGNABLE
     [self.titleContentView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.titleScrollView setTranslatesAutoresizingMaskIntoConstraints:NO];
     
-    NSDictionary *views = @{
-                            @"scrollView":self.titleScrollView,
-                            @"contentView":self.titleContentView
-                            };
-    
-    //config scrollView
-    NSArray<NSLayoutConstraint *> *hConstraints = [NSLayoutConstraint
-                                                   constraintsWithVisualFormat:@"H:|[scrollView]|"
-                                                   options:0 metrics:nil
-                                                   views:views
-                                                   ];
-    [self addConstraints:hConstraints];
-    NSArray<NSLayoutConstraint *> *vConstraints = [NSLayoutConstraint
-                                                   constraintsWithVisualFormat:@"V:|[scrollView]|"
-                                                   options:0 metrics:nil
-                                                   views:views
-                                                   ];
-    [self addConstraints:vConstraints];
-    
-    //config contentView
-    hConstraints = [NSLayoutConstraint
-                    constraintsWithVisualFormat:@"H:|[contentView(>=scrollView)]|"
-                    options:0 metrics:nil
-                    views:views
-                    ];
-    [self.titleScrollView addConstraints:hConstraints];
-    vConstraints = [NSLayoutConstraint
-                    constraintsWithVisualFormat:@"V:|[contentView(==scrollView)]|"
-                    options:0 metrics:nil
-                    views:views
-                    ];
-    [self.titleScrollView addConstraints:vConstraints];
-    
-    
+    _needsUpdateScrollView = YES;
+    [self setNeedsUpdateConstraints];
 }
+
+
 
 
 #pragma mark - Getter
@@ -173,9 +144,6 @@ IB_DESIGNABLE
     }
 }
 
-- (UIEdgeInsets)contentInsets{
-    return self.titleScrollView.contentInset;
-}
 
 - (UIColor *)titleColor{
     if (!_titleColor) {
@@ -222,7 +190,9 @@ IB_DESIGNABLE
 
 #pragma mark - Setter
 - (void)setContentInsets:(UIEdgeInsets)contentInsets{
-    self.titleScrollView.contentInset = contentInsets;
+    _contentInsets = contentInsets;
+    _needsUpdateScrollView = YES;
+    [self setNeedsUpdateConstraints];
 }
 
 - (void)setMiniGap:(CGFloat)miniGap{
@@ -277,13 +247,15 @@ IB_DESIGNABLE
         
         if (selectedButton) {
             [UIView animateWithDuration:TO_PAGE_ANIMATE_DURATION delay:0.05 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                CGFloat offsetX = selectedButton.frame.origin.x + selectedButton.frame.size.width/2 - self.frame.size.width/2;
+                CGFloat offsetX = selectedButton.frame.origin.x + selectedButton.frame.size.width/2 - self.titleScrollView.frame.size.width/2;
                 if (offsetX < 0) {
                     offsetX = 0;
                 }
-                if (offsetX >self.titleScrollView.contentSize.width - self.frame.size.width) {
-                    offsetX = self.titleScrollView.contentSize.width - self.frame.size.width;
+                if (offsetX >self.titleScrollView.contentSize.width - self.titleScrollView.frame.size.width) {
+                    offsetX = self.titleScrollView.contentSize.width - self.titleScrollView.frame.size.width;
                 }
+                CGPoint contentOffset = self.titleScrollView.contentOffset;
+                contentOffset.x = offsetX;
                 self.titleScrollView.contentOffset = CGPointMake(offsetX, 0);
             } completion:nil];
         }
@@ -329,6 +301,11 @@ IB_DESIGNABLE
 
 #pragma mark - Override
 - (void)updateConstraints{
+    if (_needsUpdateScrollView) {
+        _needsUpdateScrollView = NO;
+        [self updateScrollView];
+    }
+    
     if (_needsUpdateButtons) {
         _needsUpdateButtons = NO;
         _needsUpdateIndicator = YES;
@@ -343,6 +320,45 @@ IB_DESIGNABLE
 }
 
 #pragma mark - Private
+- (void)updateScrollView{
+    [self.titleScrollView removeConstraints:self.titleScrollView.constraints];
+    UIEdgeInsets edgInsets = self.contentInsets;
+
+    NSDictionary *views = @{
+                            @"scrollView":self.titleScrollView,
+                            @"contentView":self.titleContentView
+                            };
+    
+    //config scrollView
+    NSArray<NSLayoutConstraint *> *hConstraints = [NSLayoutConstraint
+                                                   constraintsWithVisualFormat:[NSString stringWithFormat:@"H:|-(%f)-[scrollView]-(%f)-|",edgInsets.left,-edgInsets.right]
+                                                   options:0 metrics:nil
+                                                   views:views
+                                                   ];
+    [self addConstraints:hConstraints];
+    NSArray<NSLayoutConstraint *> *vConstraints = [NSLayoutConstraint
+                                                   constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-(%f)-[scrollView]-(%f)-|",edgInsets.top,-edgInsets.bottom]
+                                                   options:0 metrics:nil
+                                                   views:views
+                                                   ];
+    [self addConstraints:vConstraints];
+    
+    
+    //config contentView
+    hConstraints = [NSLayoutConstraint
+                    constraintsWithVisualFormat:@"H:|[contentView(>=scrollView)]|"
+                    options:0 metrics:nil
+                    views:views
+                    ];
+    [self.titleScrollView addConstraints:hConstraints];
+    vConstraints = [NSLayoutConstraint
+                    constraintsWithVisualFormat:@"V:|[contentView(==scrollView)]|"
+                    options:0 metrics:nil
+                    views:views
+                    ];
+    [self.titleScrollView addConstraints:vConstraints];
+}
+
 - (void)updateButtons{
     [self buttons];
     @synchronized (_buttons) {
