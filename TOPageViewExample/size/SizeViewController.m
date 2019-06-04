@@ -63,7 +63,11 @@
                                                    [TOPageItem itemWithTitle:@"食品"],
                                                    [TOPageItem itemWithTitle:@"百货"],
                                                    [TOPageItem itemWithTitle:@"数码"],
-                                                   
+                                                   ({
+            TOPageItem *pageItem = [TOPageItem itemWithTitle:@"数码"];
+            pageItem.minWidth = 60;
+            pageItem;
+        }),
                                                    ]];
     }
     return _titles;
