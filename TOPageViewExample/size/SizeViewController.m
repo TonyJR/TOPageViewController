@@ -41,6 +41,7 @@
     [super viewDidLoad];
     
     self.title = @"尺寸设置";
+    self.titleView.itemMinWidth = 100;
     self.titleView.titles = self.titles;
     self.titleView.contentInsets = UIEdgeInsetsMake(0, -12, 0, 12);
 }

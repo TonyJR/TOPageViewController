@@ -68,11 +68,15 @@ typedef enum : NSUInteger {
 
 
 /**
- MinGap is the maxmum value between buttons, default is 10.0f
+ MinGap is the minimum value between buttons, default is 10.0f
  */
 @property (nonatomic,assign) CGFloat miniGap;
 
 
+/**
+ ItemMinWidth is the width of items, default is 0.0f means auto width
+ */
+@property (nonatomic,assign) CGFloat itemMinWidth;
 
 
 /**

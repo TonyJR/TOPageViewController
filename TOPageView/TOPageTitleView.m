@@ -414,14 +414,18 @@ IB_DESIGNABLE
                 spaceView = button.buttonLeftView;
                 views[@"space"] = spaceView;
                 if (align == TOPageTitleAlignAverage) {
-                    if (titleItem.minWidth > 0) {
+                    if (titleItem.minWidth > 0){
                         [hVisualFormat appendFormat:@"[%@(>=%f)][%@(>=%f)][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,titleItem.minWidth,buttonRightName];
+                    }else if (self.itemMinWidth > 0) {
+                        [hVisualFormat appendFormat:@"[%@(>=%f)][%@(>=%f)][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,self.itemMinWidth,buttonRightName];
                     }else{
                         [hVisualFormat appendFormat:@"[%@(>=%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
                     }
                 }else{
                     if (titleItem.minWidth > 0) {
                         [hVisualFormat appendFormat:@"[%@(==%f)][%@(>=%f)][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,titleItem.minWidth,buttonRightName];
+                    }else if (self.itemMinWidth > 0) {
+                        [hVisualFormat appendFormat:@"[%@(==%f)][%@(>=%f)][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,self.itemMinWidth,buttonRightName];
                     }else{
                         [hVisualFormat appendFormat:@"[%@(==%f)][%@][%@(==space)]",buttonLeftName,self.miniGap/2,buttonName,buttonRightName];
                     }
@@ -430,6 +434,8 @@ IB_DESIGNABLE
             }else{
                 if (titleItem.minWidth > 0) {
                     [hVisualFormat appendFormat:@"[%@(==space)][%@(>=%f)][%@(==space)]",buttonLeftName,buttonName,titleItem.minWidth,buttonRightName];
+                }else if (self.itemMinWidth > 0) {
+                    [hVisualFormat appendFormat:@"[%@(==space)][%@(>=%f)][%@(==space)]",buttonLeftName,buttonName,self.itemMinWidth,buttonRightName];
                 }else{
                     [hVisualFormat appendFormat:@"[%@(==space)][%@][%@(==space)]",buttonLeftName,buttonName,buttonRightName];
                 }
