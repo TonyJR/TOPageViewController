@@ -532,6 +532,7 @@ IB_DESIGNABLE
 
 - (TOPageTitleButton *)factoryCreateButton:(TOPageItem *)item{
     TOPageTitleButton *button = [[TOPageTitleButton alloc] init];
+    
     [button setTitleColor:self.titleColor forState:UIControlStateNormal];
     [button setTitleColor:self.highlightedTitleColor forState:UIControlStateHighlighted];
     [button setTitleColor:self.selectedTitleColor forState:UIControlStateSelected];
@@ -544,24 +545,22 @@ IB_DESIGNABLE
     if ([item.icon isKindOfClass:[UIImage class]]) {
         [button setImage:(UIImage *)item.icon forState:UIControlStateNormal];
     }else if ([item.icon isKindOfClass:[NSString class]]) {
-        SEL sel = NSSelectorFromString(@"sd_setImageWithURL: forState:");
+        SEL sel = NSSelectorFromString(@"sd_setImageWithURL:forState:");
         if ([button respondsToSelector:sel]) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [button performSelector:sel withObject:item.icon withObject:@(UIControlStateNormal)];
-#pragma clang diagnostic pop
+            IMP imp = [button methodForSelector:sel];
+            void (*func)(id, SEL,NSURL *,UIControlState) = (void *)imp;
+            func(button,sel,[NSURL URLWithString:item.icon],UIControlStateNormal);
         }
     }
     
     if ([item.highlightedIcon isKindOfClass:[UIImage class]]) {
         [button setImage:(UIImage *)item.highlightedIcon forState:UIControlStateSelected];
     }else if ([item.highlightedIcon isKindOfClass:[NSString class]]) {
-        SEL sel = NSSelectorFromString(@"sd_setImageWithURL: forState:");
+        SEL sel = NSSelectorFromString(@"sd_setImageWithURL:forState:");
         if ([button respondsToSelector:sel]) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [button performSelector:sel withObject:item.highlightedIcon withObject:@(UIControlStateSelected)];
-#pragma clang diagnostic pop
+            IMP imp = [button methodForSelector:sel];
+            void (*func)(id, SEL,NSURL *,UIControlState) = (void *)imp;
+            func(button,sel,[NSURL URLWithString:item.highlightedIcon],UIControlStateSelected);
         }
     }
     
